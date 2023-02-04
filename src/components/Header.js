@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import {BsSearch} from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
 
 const Header = () => {
   return (
@@ -62,6 +62,37 @@ const Header = () => {
                       <p className='mb-0'>$ 500</p>
                     </div>
                   </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <header className='header-bottom py-3'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12'>
+              <div className='menu-bottom d-flex align-items-center gap-30'>
+                <div>
+                  <div className="dropdown">
+                    <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 d-flex align-items-center gap-15 me-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="images/menu.svg" alt="" /><span className='d-inline-block'>Shop Categories</span>
+                    </button>
+                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><Link className="dropdown-item text-white" to="">Action</Link></li>
+                      <li><Link className="dropdown-item text-white" to="">Another action</Link></li>
+                      <li><Link className="dropdown-item text-white" to="">Something else here</Link></li>
+                    </ul>
+                  </div>
+                </div>
+                <div className='menu-links'>
+                  <div className='d-flex align-items-center gap-15'>
+                    <NavLink to="/home">Home</NavLink>
+                    <NavLink to="/">Our Store</NavLink>
+                    <NavLink to="/">Blogs</NavLink>
+                    <NavLink to="/">Contact</NavLink>
+                  </div>
                 </div>
               </div>
             </div>
