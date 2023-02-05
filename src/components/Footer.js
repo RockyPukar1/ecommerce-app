@@ -37,18 +37,18 @@ function Footer() {
                 <a href='tel: +91 826484843' className='mt-3 d-block mb-1 text-white'>+91 826484843</a>
                 <a href='mailto: hello@hello.com' className='mt-4 d-block mb-0 text-white'>hello@hello.com</a>
                 <div className='social-icons d-flex align-items-center gap-30 mt-4'>
-                  <a className='text-whitey' href=''>
+                  <Link className='text-white' to='#'>
                     <BsLinkedin className='fs-4' />
-                  </a>
-                  <a className='text-whitey' href=''>
+                  </Link>
+                  <Link className='text-white' to='#'>
                     <BsInstagram className='fs-4' />
-                  </a>
-                  <a className='text-whitey' href=''>
+                  </Link>
+                  <Link className='text-white' to='#'>
                     <BsGithub className='fs-4' />
-                  </a>
-                  <a className='text-whitey' href=''>
+                  </Link>
+                  <Link className='text-white' to='#'>
                     <BsYoutube className='fs-4' />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
