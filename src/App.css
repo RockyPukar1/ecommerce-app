@@ -43,6 +43,10 @@ a {
   border-color: inherit;
 }
 
+.gap-5 {
+  gap: 5px;
+}
+
 .gap-10 {
   gap: 10px;
 }
@@ -363,10 +367,45 @@ footer .input-group-text {
 /* Special Product */
 
 .special-product-card {
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 10px;
   background-color: white;
 }
 
-
 /* Special Products Ends here */
+
+
+
+/* Famous Card */
+.famous-card .famous-content {
+  top: 10%;
+  left: 10%
+}
+
+.famous-card img {
+  border-radius: 10px;
+}
+
+.famous-card .famous-content h5 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400px;
+  color: white;
+  margin-bottom: 7px;
+}
+
+.famous-card .famous-content h6 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 500;
+  color: white;
+}
+
+.famous-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+  color: white;
+}
+
+/* Famous Card Ends Here */
