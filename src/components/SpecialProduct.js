@@ -35,7 +35,7 @@ const SpecialProduct = () => {
                         <div className='prod-count my-3'>
                             <p>Products: 5</p>
                             <div className='progress'>
-                                <div class="progress-bar" role="progressbar"
+                                <div className="progress-bar" role="progressbar"
                                     style={{ "width": "25%" }}
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>

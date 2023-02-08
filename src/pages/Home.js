@@ -4,10 +4,14 @@ import Marquee from "react-fast-marquee";
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
 import SpecialProduct from '../components/SpecialProduct';
-
+import { Helmet } from 'react-helmet';
 const Home = () => {
   return (
     <>
+      <Helmet>
+            <meta charSet="utf-8" />
+            <title>Home</title>
+      </Helmet>
       <section className='home-wrapper-1 py-5'>
         <div className='container-xxl'>
           <div className='row py-3'>
@@ -197,6 +201,36 @@ const Home = () => {
                   <h5>Big Screen</h5>
                   <h6>Smart Watch Series 7</h6>
                   <p>From $399 or $16.62/month for 24 month</p>
+                </div>
+              </div>
+            </div>
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img className='img-fluid' src='images/famous-2.webp' alt='famous' />
+                <div className='famous-content position-absolute'>
+                  <h5 className='text-dark'>Studio Display</h5>
+                  <h6 className='text-dark'>600 nits of brightness.</h6>
+                  <p className='text-dark'>27-inch 5K Retina display</p>
+                </div>
+              </div>
+            </div>
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img className='img-fluid' src='images/famous-3.webp' alt='famous' />
+                <div className='famous-content position-absolute'>
+                  <h5 className='text-dark'>Smartphones</h5>
+                  <h6 className='text-dark'>Smartphone 13 Pro.</h6>
+                  <p className='text-dark'>Now in Green. From $999.00 or $41.62/mo.</p>
+                </div>
+              </div>
+            </div>
+            <div className='col-3'>
+              <div className='famous-card position-relative'>
+                <img className='img-fluid' src='images/famous-4.webp' alt='famous' />
+                <div className='famous-content position-absolute'>
+                  <h5 className='text-dark'>home speakers</h5>
+                  <h6 className='text-dark'>Room-filling sound.</h6>
+                  <p className='text-dark'>From $699 or $116.58/mo. for 12 mo.*</p>
                 </div>
               </div>
             </div>

@@ -386,7 +386,7 @@ footer .input-group-text {
   border-radius: 10px;
 }
 
-.famous-card .famous-content h5 {
+.famous-content h5 {
   font-size: 13px;
   line-height: 20px;
   font-weight: 400px;
@@ -395,7 +395,7 @@ footer .input-group-text {
 }
 
 .famous-card .famous-content h6 {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 38px;
   font-weight: 500;
   color: white;
