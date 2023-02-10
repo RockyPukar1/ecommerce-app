@@ -327,6 +327,7 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
 }
 
 .product-card:hover .action-bar {
@@ -451,7 +452,7 @@ footer .input-group-text {
   font-weight: 600;
   color: var(--color-1c1c1b);
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .colors {
@@ -468,4 +469,46 @@ footer .input-group-text {
   border-radius: 50%;
 }
 
+.random-products h5 {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.random-products:not(:last-child) {
+  border-bottom: 1px solid var(--color-ededed);
+}
+
+.filter-sort-grid {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.filter-sort-grid .form-select:focus {
+  box-shadow: none;
+  border-color: none;
+}
+
+.grid img {
+  width: 29px;
+  height: 29px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.gr-12 {
+  width: 100%;
+}
+.gr-6 {
+  width: 49%;
+}
+
+.gr-4 {
+  width: 32%;
+}
+
+.gr-3 {
+  width: 23.5%;
+}
 /* Our Store ends here */
