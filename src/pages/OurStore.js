@@ -175,9 +175,6 @@ const OurStore = () => {
                   </div>
                 </div>
               </div>
-              <div className='filter-card mb-3'>
-                <h3 className='filter-title'>Shop By Categories</h3>
-              </div>
             </div>
             <div className='col-9 mb-4'>
               <div className='filter-sort-grid'>

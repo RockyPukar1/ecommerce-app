@@ -596,3 +596,14 @@ textarea {
 
 
 /* Contact Page Ends here */
+
+
+/* Compare Product Page */
+
+.compare-product-card {
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Compare Product Page Ends here */
