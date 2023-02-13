@@ -12,7 +12,7 @@ const BlogCard = (props) => {
           <p className='date'>1 Dec, 2022</p>
           <h5 className='title'>A beautiful sunday morning renaissance</h5>
           <p className='desc'>lorem ipsum dolar sat amet lorem ipsum dolar sat amet</p>
-          <Link className='button' to="">Read More</Link>
+          <Link className='button' to="/blog/:id">Read More</Link>
         </div>
       </div>
     </div>
