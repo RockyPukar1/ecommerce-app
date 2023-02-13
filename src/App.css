@@ -64,7 +64,7 @@ a {
   color: white;
   padding: 13px 33px;
   font-size: 14px;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .button:hover {
@@ -640,10 +640,49 @@ textarea {
 
 /* Compare Product Page Ends here */
 
-
-
 /* Wishlist Page */
 
-
-
 /* Wishlist Page Ends Here */
+
+/* auth card  */
+
+.auth-card {
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.auth-card h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-777777);
+}
+
+.auth-card .form-control {
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-777777);
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.auth-card a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-1c1c1b);
+}
+
+.auth-card .signup {
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+
+.auth-card .signup:hover {
+  background-color: var(--color-131921);
+  color: white;
+}
+
+/* Auth card Ends Here */
