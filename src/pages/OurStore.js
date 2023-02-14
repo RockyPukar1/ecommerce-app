@@ -4,6 +4,7 @@ import Meta from '../components/Meta'
 import ReactStars from "react-rating-stars-component";
 import ProductCard from '../components/ProductCard';
 import Color from '../components/Color';
+import ShopByCat from '../components/ShopByCat';
 
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
@@ -17,15 +18,7 @@ const OurStore = () => {
           <div className='row'>
             <div className='col-3'>
               <div className='filter-card mb-3'>
-                <h3 className='filter-title'>Shop By Categories</h3>
-                <div>
-                  <ul className='ps-0'>
-                    <li>Watch</li>
-                    <li>TV</li>
-                    <li>Camera</li>
-                    <li>Laptop</li>
-                  </ul>
-                </div>
+                <ShopByCat />
               </div>
               <div className='filter-card mb-3'>
                 <h3 className='filter-title'>Filter By</h3>

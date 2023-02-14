@@ -2,6 +2,7 @@ import React from 'react'
 import BlogCard from '../components/BlogCard'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
+import ShopByCat from '../components/ShopByCat'
 
 const Blog = () => {
   return (
@@ -13,15 +14,7 @@ const Blog = () => {
           <div className='row'>
             <div className='col-3'>
               <div className='filter-card mb-3'>
-                <h3 className='filter-title'>SFind By Categories</h3>
-                <div>
-                  <ul className='ps-0'>
-                    <li>Watch</li>
-                    <li>TV</li>
-                    <li>Camera</li>
-                    <li>Laptop</li>
-                  </ul>
-                </div>
+                <ShopByCat />
               </div>
             </div>
             <div className='col-9'>

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import BreadCrumb from '../components/BreadCrumb'
-import {HiOutlineArrowLeft} from "react-icons/hi"
+import { HiOutlineArrowLeft } from "react-icons/hi"
 import Meta from '../components/Meta'
+import ShopByCat from '../components/ShopByCat'
 
 const SingleBlog = () => {
     return (
@@ -12,9 +13,14 @@ const SingleBlog = () => {
             <div className='blog-wrapper home-wrapper-2 py-3'>
                 <div className='container-xxl'>
                     <div className='row'>
-                        <div className='col-12'>
+                        <div className='col-3'>
+                            <div className='filter-card mb-3'>
+                                <ShopByCat />
+                            </div>
+                        </div>
+                        <div className='col-9'>
                             <div className='single-blog-card'>
-                                <Link to="/blog" className='d-flex align-items-center gap-10'>< HiOutlineArrowLeft />Go back to Blogs</Link>
+                                <Link to="/blog" className='d-flex align-items-center gap-10'>< HiOutlineArrowLeft className='fs-4' />Go back to Blogs</Link>
                                 <h3 className='title'>A Beautiful Sunday Morning Renaissance</h3>
                                 <img src="/images/blog-1.jpg" class="img-fluid w-100" alt="blog" />
                                 <p>A Beautiful Sunday Morning Renaissance
