@@ -38,25 +38,25 @@ const Header = () => {
               <div className='header-upper-links d-flex align-items-center justify-content-between'>
                 <div>
                   <Link to="/compare-product" className='d-flex align-items-center gap-10 text-white'>
-                    <img src="images/compare.svg" alt="compare" />
+                    <img src="/images/compare.svg" alt="compare" />
                     <p className='mb-0'>Compare <br /> Products</p>
                   </Link>
                 </div>
                 <div>
                   <Link to="/wishlist" className='d-flex align-items-center gap-10 text-white'>
-                    <img src="images/wishlist.svg" alt="wishlist" />
+                    <img src="/images/wishlist.svg" alt="wishlist" />
                     <p className='mb-0'>Favorite <br /> Wishlist</p>
                   </Link>
                 </div>
                 <div>
                   <Link to="/login" className='d-flex align-items-center gap-10 text-white'>
-                    <img src="images/user.svg" alt="user" />
+                    <img src="/images/user.svg" alt="user" />
                     <p className='mb-0'>Log in <br /> My Account</p>
                   </Link>
                 </div>
                 <div>
                   <Link to="" className='d-flex align-items-center gap-10 text-white'>
-                    <img src="images/cart.svg" alt="cart" />
+                    <img src="/images/cart.svg" alt="cart" />
                     <div className='d-flex flex-column gap-10'>
                       <span className='badge bg-white text-dark'>0</span>
                       <p className='mb-0'>$ 500</p>
@@ -77,7 +77,7 @@ const Header = () => {
                 <div>
                   <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 d-flex align-items-center gap-15 me-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="images/menu.svg" alt="" /><span className='d-inline-block'>Shop Categories</span>
+                      <img src="/images/menu.svg" alt="" /><span className='d-inline-block'>Shop Categories</span>
                     </button>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li><Link className="dropdown-item text-white" to="">Action</Link></li>

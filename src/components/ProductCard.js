@@ -8,12 +8,12 @@ const ProductCard = (props) => {
     console.log(location);
     return (
         <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3" }`}>
-            <Link to="" className='product-card position-relative'>
+            <Link to="/product/:id" className='product-card position-relative'>
                 <div className='wishlist-icon position-absolute'>
-                    <Link to=""><img src='images/wish.svg' alt='wishlist' /></Link>
+                    <Link to=""><img src='/images/wish.svg' alt='wishlist' /></Link>
                 </div>
                 <div className='product-image'>
-                    <img src='images/watch.jpg' alt='product' />
+                    <img src='/images/watch.jpg' alt='product' />
                 </div>
                 <div className='product-details'>
                     <h6 className='brand'>Havels</h6>
@@ -31,9 +31,9 @@ const ProductCard = (props) => {
                 </div>
                 <div className='action-bar position-absolute'>
                     <div className='d-flex flex-column gap-15'>
-                        <Link to=""><img src='images/view.svg' alt='view' /></Link>
-                        <Link to=""><img src='images/prodcompare.svg' alt='compare' /></Link>
-                        <Link to=""><img src='images/add-cart.svg' alt='addcart' /></Link>
+                        <Link to=""><img src='/images/view.svg' alt='view' /></Link>
+                        <Link to=""><img src='/images/prodcompare.svg' alt='compare' /></Link>
+                        <Link to=""><img src='/images/add-cart.svg' alt='addcart' /></Link>
                     </div>
                 </div>
             </Link>

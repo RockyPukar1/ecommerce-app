@@ -10,7 +10,7 @@ function Footer() {
           <div className='row'>
             <div className='col-5'>
               <div className='footer-top-data d-flex gap-30 align-items-center'>
-                <img src="images/newsletter.png" alt='' />
+                <img src="/images/newsletter.png" alt='' />
                 <h2 className='mb-0 text-white'>Sign Up for Newletter</h2>
               </div>
             </div>
@@ -55,19 +55,19 @@ function Footer() {
             <div className='col-3'>
               <h4 className='text-white mb-4'>Information</h4>
               <div className='footer-link d-flex flex-column'>
-                <Link className="text-white py-2 mb-1" to="">Privacy Policy</Link>
-                <Link className="text-white py-2 mb-1" to="">Refund Policy</Link>
-                <Link className="text-white py-2 mb-1" to="">Shipping Policy</Link>
-                <Link className="text-white py-2 mb-1" to="">Terms & Conditions</Link>
-                <Link className="text-white py-2 mb-1" to="">Blogs</Link>
+                <Link className="text-white py-2 mb-1" to="/privacy-policy">Privacy Policy</Link>
+                <Link className="text-white py-2 mb-1" to="/refund-policy">Refund Policy</Link>
+                <Link className="text-white py-2 mb-1" to="/shipping-policy">Shipping Policy</Link>
+                <Link className="text-white py-2 mb-1" to="/terms-and-conditions">Terms & Conditions</Link>
+                <Link className="text-white py-2 mb-1" to="/blog">Blogs</Link>
               </div>
             </div>
             <div className='col-3'>
               <h4 className='text-white mb-4'>Account</h4>
               <div className='footer-link d-flex flex-column'>
-                <Link className="text-white py-2 mb-1" to="">About Us</Link>
+                <Link className="text-white py-2 mb-1" to="/about">About Us</Link>
                 <Link className="text-white py-2 mb-1" to="">Faq</Link>
-                <Link className="text-white py-2 mb-1" to="">Contact</Link>
+                <Link className="text-white py-2 mb-1" to="/contact">Contact</Link>
               </div>
             </div>
             <div className='col-2'>
