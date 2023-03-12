@@ -28,6 +28,10 @@ const Login = () => {
                                     <button className='button border-0'>Login</button>
                                     <Link to="/signup" className='button signup'>Sign Up</Link>
                                 </div>
+                                <div className='mt-3 d-flex justify-content-center gap-15 align-items-center'>
+                                    <button className='button border-0'>Login</button>
+                                    <Link to="/signup" className='button signup'>Sign Up</Link>
+                                </div>
                             </form>
                         </div>
                     </div>
