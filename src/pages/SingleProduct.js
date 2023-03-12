@@ -6,16 +6,27 @@ import ReactStars from 'react-rating-stars-component';
 import ReactImageZoom from "react-image-zoom";
 import { Link } from 'react-router-dom';
 import Color from '../components/Color';
+import { TbGitCompare } from 'react-icons/tb';
+import { AiOutlineHeart } from 'react-icons/ai';
 // import watch from "../"
 const SingleProduct = () => {
-    const props = { width: 400, height: 500, zoomWidth: 500, img: "/images/zoom-image-watch.jpg" };
+    const props = { width: 400, height: 250, zoomWidth: 600, img: "/images/zoom-image-watch.jpg" };
     const [orderedProduct] = useState(true);
+    const copyToClipboard = (text) => {
+        console.log('text', text)
+        var textField = document.createElement('textarea')
+        textField.innerText = text
+        document.body.appendChild(textField)
+        textField.select()
+        document.execCommand('copy')
+        textField.remove()
+    }
     return (
         <>
             <Meta title="Product Name" />
             <BreadCrumb title="Product Name" />
             <div className='main-product-wrapper py-5 home-wrapper-2'>
-                <div className='container-xxl p-3 bg-white'>
+                <div className='container-xxl p-3'>
                     <div className='row'>
                         <div className='col-6'>
                             <div className='main-product-image'>
@@ -50,7 +61,7 @@ const SingleProduct = () => {
                                     </div>
                                     <a href='#review' className='review-btn'>Write a Review</a>
                                 </div>
-                                <div className='border-bottom'>
+                                <div>
                                     <div className='d-flex align-items-center gap-10 my-2'>
                                         <h3 className='product-heading'>Type: </h3>
                                         <p className='product-data'>Laptops</p>
@@ -59,7 +70,7 @@ const SingleProduct = () => {
                                         <h3 className='product-heading'>Brand: </h3>
                                         <p className='product-data'>Bajaj</p>
                                     </div>
-                                    <div className='d-flex align-items-center gap-10 my-2'>
+                                    <div className='d-flex flex-column gap-10 my-2'>
                                         <h3 className='product-heading'>Categories: </h3>
                                         <p className='product-data'>Accessoriescamera'sCameras & VideosHeadphonesheadphonesHome AppliancesHome pageiPadslaptopsmini speaker</p>
                                     </div>
@@ -75,17 +86,48 @@ const SingleProduct = () => {
                                         <h3 className='product-heading'>Availability: </h3>
                                         <p className='product-data'>25 In Stock</p>
                                     </div>
-                                    <div className='d-flex align-items-center gap-10 my-2'>
+                                    <div className='d-flex flex-column gap-10 mt-2 mb-3'>
                                         <h3 className='product-heading'>Size: </h3>
-                                        <p className='product-data'>25 In Stock</p>
+                                        <div className='d-flex flex-wrap gap-15'>
+                                            <span className='badge border border-1 border-secondary text-dark'>S</span>
+                                            <span className='badge border border-1 border-secondary text-dark'>M</span>
+                                            <span className='badge border border-1 border-secondary text-dark'>XL</span>
+                                            <span className='badge border border-1 border-secondary text-dark'>XXL</span>
+                                        </div>
                                     </div>
-                                    <div className='d-flex align-items-center gap-10 my-2'>
+                                    <div className='d-flex flex-column gap-10 mt-2 mb-3'>
                                         <h3 className='product-heading'>Color: </h3>
                                         <Color />
                                     </div>
                                     <div className='d-flex align-items-center gap-10 my-2'>
                                         <h3 className='product-heading'>Quantity: </h3>
-                                        <p className='product-data'>25 In Stock</p>
+                                        <div className=''>
+                                            <input type="number" name="" min={1} max={10} style={{ width: "70px" }} className="form-control" />
+                                        </div>
+                                        <div className='d-flex gap-15 align-items-center ms-5'>
+                                            <button className='button border-0'>Add to Cart</button>
+                                            <button className='button signup border-0'>Buy it now</button>
+                                        </div>
+                                    </div>
+                                    <div className='d-flex align-items-center gap-15'>
+                                        <div>
+                                            <a href='/compare-product'>
+                                                <TbGitCompare className='fs-5 me-2' /> Add to compare</a>
+                                        </div>
+                                        <div>
+                                            <a href='/wishlist'>
+                                                <AiOutlineHeart className='fs-5 me-2' /> Add to wishlist</a>
+                                        </div>
+                                    </div>
+                                    <div className='d-flex flex-column gap-10 my-2 mt-4 border-bottom'>
+                                        <h3 className='product-heading'>Shipping and Returns</h3>
+                                        <p className='product-data'>Free shipping and returns available on all orders!<br />We ship all US domestic orders within <strong>5-10 business days!</strong></p>
+                                    </div>
+                                    <div className='d-flex flex-column gap-10 my-2 mt-4'>
+                                        <h3 className='product-heading'>Product Link: </h3>
+                                        <a href="javascript:void(0);" onClick={()=>{copyToClipboard("https://unsplash.com/photos/vCF5sB7QecM")}}>
+                                            Copy Product Link
+                                        </a>
                                     </div>
                                 </div>
                             </div>

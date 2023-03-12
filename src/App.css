@@ -697,12 +697,12 @@ textarea {
   color: var(--color-1c1c1b);
 }
 
-.auth-card .signup {
+.signup {
   background-color: var(--color-febd69);
   color: var(--color-131921);
 }
 
-.auth-card .signup:hover {
+.signup:hover {
   background-color: var(--color-131921);
   color: white;
 }
@@ -788,10 +788,11 @@ textarea {
 }
 
 .main-product-image .js-image-zoom__zoomed-image {
-  left: 230px!important;
+  left: 50px!important;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
+  z-index: 1000;
 }
 
 .main-product-details {
@@ -836,7 +837,8 @@ textarea {
   margin-bottom: 0;
 }
 
-
+.main-product-details a {
+  font-size: 14px;
+  color: var(--color-777777);
+}
 /* Main Product Page Ends Here */
-
-
