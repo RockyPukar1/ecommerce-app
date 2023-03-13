@@ -5,13 +5,13 @@ import { HiOutlineArrowLeft } from "react-icons/hi"
 import Meta from '../components/Meta'
 import ShopByCat from '../components/ShopByCat'
 import blog from "../images/blog-1.jpg"
+import Container from '../components/Container'
 const SingleBlog = () => {
     return (
         <>
             <Meta title="Dynamic Blog Name" />
             <BreadCrumb title="Dynamic Blog Name" />
-            <div className='blog-wrapper home-wrapper-2 py-3'>
-                <div className='container-xxl'>
+            <Container class1='blog-wrapper home-wrapper-2 py-3'>
                     <div className='row'>
                         <div className='col-3'>
                             <div className='filter-card mb-3'>
@@ -29,8 +29,7 @@ const SingleBlog = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+            </Container>
         </>
     )
 }
